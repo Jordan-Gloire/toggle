@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <nav class="flex-row justify-between items-center bg-zinc-800 text-white">
+        <div class="flex justify-between items-center p-5">
+            <h1 class="text-4xl ">MonLogo</h1>
+            <img src="../togglemenu.png" class="w-14  cursor-pointer" id="montoggle">
+        </div>
+
+        <ul class=" flex justify-between items-center hidden bg-orange-600 px-10 py-2 text-center pb-3" id="mesPg">
+            <li><a class="text-2xl" href="#">Home</a></li>
+            <li><a class="text-2xl" href="#">Purpose</a></li>
+            <li><a class="text-2xl" href="#">Infos</a></li>
+            <li><a class="text-2xl" href="#">Support</a></li>
+            <li><a class="text-2xl" href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+    <header class="w-full">
+        <img src="../src/img/dev.jpg" alt="" class="w-full">
+        <h1 class="text-6xl text-center py-8 font-bold">Menu Toggle Animé avec jQuery !</h1>
+        <p class="text-4xl text-center py-8">Designed by Gloire Gnu Linux <br>
+        Your Dev Front</p>
+    </header>
+    <script src="./jquery/dist/jquery.min.js"></script>
+    <script>
+        $('#montoggle').on('click',()=>{
+            $('#mesPg').slideToggle(1000)
+        })
+    </script>
+</body>
+</html>
